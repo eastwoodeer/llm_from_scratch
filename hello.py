@@ -1,0 +1,12 @@
+import urllib.request
+
+url = ("https://raw.githubusercontent.com/rasbt/LLMs-from-scratch/main/ch02/01_main-chapter-code/the-verdict.txt")
+
+file_path = "the-verdict.txt"
+
+def main():
+    urllib.request.urlretrieve(url, file_path)
+    print("Hello from simple-llm!")
+
+if __name__ == "__main__":
+    main()
